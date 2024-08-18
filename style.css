@@ -1,0 +1,161 @@
+  /* Reset default margins and padding */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  /* Set full height for the page */
+  html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #C5E8C7;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+  }
+
+  /* Navbar styling */
+  .navbar {
+      background-color: white;
+      padding: 15px 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+  }
+
+  .navbar a {
+      text-decoration: none;
+      color: #333;
+      margin-right: 20px;
+      font-weight: bold;
+      font-size: 1em;
+  }
+
+  .navbar .sign-in-btn {
+      background-color: #65558F;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+  }
+
+  .navbar .sign-in-btn:hover {
+      background-color: #4a4170;
+  }
+
+  /* Content styling for centering */
+  .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      margin-top: 100px; /* Adjust for fixed navbar height */
+  }
+
+  /* Title styling */
+  .content h1 {
+      font-size: 3.5em;
+      color: #333;
+      margin-bottom: 20px;
+  }
+
+  /* Mission statement styling */
+  .content p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      max-width: 800px;
+      margin-bottom: 40px;
+      color: #555;
+  }
+
+  /* Get Started button styling */
+  .get-started-btn {
+      background-color: #65558F;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 15px 30px;
+      cursor: pointer;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease;
+  }
+
+  .get-started-btn:hover {
+      background-color: #4a4170;
+  }
+
+/* Events Section Styling */
+.events-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.events-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.event {
+    min-width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #C5E8C7;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+button.prev, button.next {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    z-index: 2;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    color: #65558F;
+}
